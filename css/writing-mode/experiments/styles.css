@@ -1,0 +1,7 @@
+h1 {
+    border: 1px solid blueviolet;
+    padding: 10px;
+    writing-mode: horizontal-tb;
+    width: 300px;
+    height: 100px;
+}

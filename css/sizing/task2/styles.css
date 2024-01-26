@@ -1,0 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+.inner {
+    width: 60%;
+    padding: 10%;
+}

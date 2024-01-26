@@ -1,0 +1,26 @@
+/* @import "styles.css"; */
+
+/* Create your test CSS here */
+
+h1 {
+    color: blueviolet;
+}
+
+/* a:link { */
+/*     color: blue; */
+/*     text-decoration-color: hotpink; */
+/* } */
+
+.box p:first-child {
+    color: blueviolet;
+    border: 1px solid black;
+    width: 10%;
+    transform: rotate(0.8turn);
+    background-image: linear-gradient(lightblue, lightgreen);
+}
+
+@media (max-width: 500px){
+    body {
+        background-image: linear-gradient(lightblue, lightgreen);
+    }
+}

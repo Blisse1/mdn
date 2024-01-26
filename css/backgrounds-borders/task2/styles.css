@@ -1,0 +1,15 @@
+.box {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+    border: 5px solid lightblue;
+}
+
+h2 {
+    background-image: url(star.png), url(star.png), url(star.png), url(star.png);
+    background-repeat: no-repeat;
+    background-position:
+    top 40px left,
+    right -2px,
+    right 30px,
+    right 60px;
+}
