@@ -1,0 +1,154 @@
+/* Generated styles */
+
+@font-face {
+    font-family: 'abhaya_libreregular';
+    src: url('fonts/abhayalibre-regular-webfont.woff2') format('woff2'),
+         url('fonts/abhayalibre-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'asapsymbol';
+    src: url('fonts/asap-symbol-webfont.woff2') format('woff2'),
+         url('fonts/asap-symbol-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header, section, aside, nav, footer {
+    padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'abhaya_libreregular';
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    word-spacing: .1em;
+}
+
+h1,
+h2 {
+    font-family: 'asapsymbol';
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+
+p, ul, li {
+    font-size: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+}
+
+h2 + p {
+    text-indent: 20px;
+}
+
+a {
+    outline: none;
+}
+
+a:link {
+    color: #a66;
+}
+
+a:visited {
+    color: #b33009;
+}
+
+a:focus {
+    color: #243f38;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cfa963;
+    text-decoration: none;
+}
+
+a:active {
+    color: #cfa963;
+    text-decoration: none;
+    box-shadow: 2px 2px green;
+}
+
+a[href^="https"]::after {
+    content: "";
+    background: url("img/external-link-52.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-bottom: -2px;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    border: 1px solid brown;
+    font-size: 1.5em;
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+    margin-left: -70px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 5px;
+}
+

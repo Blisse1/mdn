@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>CSS Grid starting point</title>
+        <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .container > div {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207,232,220);
+            border: 2px solid rgb(79,185,227);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-auto-rows: minmax(100px, auto);
+            gap: 20px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <h1>Simple grid example</h1>
+
+        <div class="container">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ex risus, laoreet sit amet dignissim nec, molestie a metus. Nam eget dictum elit. Proin quis sem vitae leo posuere vulputate. Maecenas commodo magna nulla. Suspendisse vulputate turpis sit amet est pretium sodales. Fusce maximus orci vel laoreet ultricies. Duis auctor dictum purus, in varius quam vestibulum eu. Pellentesque porta orci quis euismod rhoncus. Cras pharetra in metus at ultricies. Praesent scelerisque, tortor eget dictum laoreet, purus nunc convallis ex, sed volutpat tortor leo eget nunc. Aliquam condimentum, sapien tristique dictum aliquam, lacus lacus sagittis mi, vitae facilisis tellus odio pulvinar erat. Morbi ultrices facilisis nulla ac pretium.</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+            <div>Six</div>
+            <div>Seven</div>
+        </div>
+
+    </body>
+
+</html>
