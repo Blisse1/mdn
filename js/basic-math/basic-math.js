@@ -9,7 +9,7 @@ console.log(typeof myFloat);
 
 const lotsOfDecimal = 1.766584958675746364;
 
-const twoDecimalPlaces = Number(lotsOfDecimal.toFixed(2)); 
+const twoDecimalPlaces = lotsOfDecimal.toFixed(2); 
 // toFixed turns the number into a string
 
 console.log(typeof twoDecimalPlaces + twoDecimalPlaces);
