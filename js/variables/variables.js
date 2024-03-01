@@ -32,7 +32,6 @@ console.log(bird.species);
 
 bird.species = "Striated Caracara";
 
-
 // When to use let and when to use const
 // Use const when you can and use let when you have to
 // If you can initialize a variable when you declare it and dont need to reassign it later
