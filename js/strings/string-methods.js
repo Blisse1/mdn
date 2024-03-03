@@ -61,11 +61,23 @@ console.log(radData.toUpperCase());
 
 // Updating parts of a string; replace()
 // You can replace one substring inside a string with another substring
+// Replace doesnt change the string it was called on but returns a new string
 
-const myBrowser = "chrome";
-const updated = myBrowser.replace("chrome", "firefox");
+let myBrowser = "chrome";
+let updated = myBrowser.replace("chrome", "firefox");
 
 console.log(updated);
 console.log(myBrowser);
 
+// If you want to update the original myBrowser type variable:
 
+myBrowser = updated;
+console.log(myBrowser);
+
+// Replace only changes the first occurrence of the substring
+// If you want to change all occurrences, you can use; replaceAll()
+
+let quote = "To be or not to be";
+quote = quote.replaceAll("be", "code");
+
+console.log(quote)
