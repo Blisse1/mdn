@@ -13,4 +13,4 @@ else {} // run some other code instead
 // It's much easier to understand the code if you use curly braces to delimit
 // the blocks of code
 //
-// Por lo general se elije if else para condiciones complejas :
+// Por lo general se elije if else para condiciones complejas
