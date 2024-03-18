@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Change color</button>    
+    <script>
+        // that runs when the event fires.
+        // Event handlers are sometimes called event listeners, they work together.
+        // To react to an event, you attach an event handler to it. 
+        // This is a block of code (usually a JS function that I create)
+        const btn = document.querySelector("button");
+        const controller = new AbortController();
+
+        function random(number){
+            return Math.floor(Math.random() * (number + 1));
+        }
+
+        function randomRgb(){
+            const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+            document.body.style.backgroundColor = rndCol;
+        }
+
+        // si funcionaba con abort controller, solo que asegurese de tener 
+        // el archivo correcto abierto.
+        btn.addEventListener("dblclick", randomRgb, {signal: controller.signal});
+        setTimeout(() => {
+        controller.abort();
+            console.log("event aborted after 5s")
+        }, 5000)
+    </script>
+</body>
+</html>
+
+    
