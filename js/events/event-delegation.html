@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .tile{
+                height: 100px;
+                width: 25%;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+        <script>
+            function random(number){
+                return Math.floor(Math.random() * number);
+            }
+            function bgChange(){
+                const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+                return rndCol;
+            }
+            const container = document.querySelector("#container");
+
+            container.addEventListener("click", (event) => {
+                event.target.style.backgroundColor = bgChange();
+                // event.target to get the element that was the target of the event (the innermost element)
+                // event.currentTarget to access the element that handled this event
+                // node events on() to register, once() to register an event listener that unregisters
+                // after used once
+            })
+        </script>
+    </body>
+</html>
