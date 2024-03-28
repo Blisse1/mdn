@@ -125,3 +125,46 @@ let person2 = {
 // This isnt hugely useful when you're writing out object literals by hand
 // but it will be essential when we start using constructors to create more than
 // one object from a single object definition
+
+// Introducing constructors
+// First version
+function createPerson(name){
+    const obj = {};
+    obj.name = name;
+    obj.introduceSelf = function(){
+        console.log(`Hi! I'm ${this.name}`)
+    };
+    return obj;
+}
+
+const salva = createPerson("Salva");
+salva.introduceSelf();
+
+// This works but its a bit long-winded We have to create an empty object
+// initialize it and return it. A better way is to use a constructor
+// A constructor is just a function called using new keyword.
+
+// When you call a constructor it will:
+// 1. create a new object
+// bind this to the new object, so you can refer to this in your constructor code
+// run the code in the constructor
+// return the new object
+
+// Constructors by convention, start with a capital letter and are named
+// for the type of object they create.
+
+// We could rewrite the example like this:
+
+function Person(name) {
+    this.name = name;
+    this.introduceSelf = function () {
+        console.log(`Hi! I'm ${this.name}`);
+    };
+}
+
+// to call Person() as a constructor, we use new:
+
+const salva2 = new Person("Salva");
+salva2.introduceSelf();
+
+
