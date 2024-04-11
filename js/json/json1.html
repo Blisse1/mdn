@@ -51,7 +51,6 @@ p {
             for (const cat of cats){
                 const kittens = cat.kittens;
                 cat === cats[cats.length - 1] ? motherInfo += `${cat.name}.` : motherInfo += `${cat.name}, ` 
-                // si el gato es el último, pongale un punto al final.
                 total += Number(`${cat.kittens.length}`);
                 for (const kitten of kittens) {
                     if(kitten.gender === "m"){
